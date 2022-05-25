@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haii</title>
+    <style>
+        body {
+            background-image: url(./bg_aestetik.jpg);
+            background-size: cover;
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            color: rgb(255, 255, 255);
+        }
+
+        button {
+            background-color: tomato;
+            border: none;
+            padding: 10px;
+            margin: 8px;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Haiii Cuantik....</h1>
+
+    <img src="https://64.media.tumblr.com/4efa1dc8475d1fb5b4d6162215b13e45/6e260d17cb81d3da-9c/s400x600/8124aa9b9b1e76860dc0a60ec12c966f4d2918dd.gifv"
+        alt="">
+    <audio src="music.mp3" autoplay controls></audio>
+    <h2>Mau ga jadi Pacarku?</h2>
+    <button id="btnmau" onclick='alert("Kyaaa akhirya kita jadian")'>Mau</button>
+    <button id="btngamau" onclick='gamau(this)' style='position: absolute;'>Gamau</button>
+
+    <script>
+        function gamau(id) {
+            var mau = document.getElementById('btnmau');
+            var i = Math.floor(Math.random() * 300) + 1;
+            var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+            id.style.left = i + 'px';
+            id.style.top = j + 'px';
+        }
+    </script>
+</body>
+
+</html>
